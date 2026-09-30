@@ -6,6 +6,7 @@
 <title>workbenchdev.com | Sites, landing pages e web apps</title>
 <meta name="description" content="A workbenchdev.com cria sites, landing pages e web apps sob medida para o seu negócio crescer online. Fale com a gente pelo WhatsApp ou por e-mail.">
 <meta name="theme-color" content="#000000">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2374f787'/%3E%3Cstop offset='1' stop-color='%23f3ff7d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Cg transform='translate(5 18) scale(.45)'%3E%3Cpath d='M14 8 L32 52 L50 18 L68 52 L86 8' fill='none' stroke='%23fff' stroke-width='11' stroke-miterlimit='3'/%3E%3Cpath d='M92 8 L114 8 L103 28 Z' fill='url(%23g)'/%3E%3C/g%3E%3C/svg%3E">
 <script>
 (function () {
   var r = document.documentElement;
@@ -276,7 +277,10 @@ h2 { font-size: clamp(2rem, 4.6vw, 4rem); max-width: 16em; }
 
 /* ---------- Rodapé ---------- */
 footer { border-top: 1px solid var(--line); overflow: hidden; }
-.foot-b { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px 40px; padding: 32px 0 44px; color: var(--muted); font-size: .95rem; }
+.foot-b { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px 40px; padding: 32px 0 44px; color: var(--muted); font-size: .95rem; }
+.foot-id { display: flex; flex-direction: column; gap: 12px; }
+.foot-b .brand { color: #fff; }
+.foot-b .brand:hover { color: #fff; }
 .foot-b nav { display: flex; flex-wrap: wrap; gap: 10px 28px; }
 .foot-b a { text-decoration: none; transition: color .3s; }
 .foot-b a:hover { color: #fff; }
@@ -503,7 +507,13 @@ footer { border-top: 1px solid var(--line); overflow: hidden; }
 <footer>
   <div class="wrap">
     <div class="foot-b">
-      <span>© 2026 workbenchdev.com</span>
+      <div class="foot-id">
+        <a class="brand" href="#topo" aria-label="workbenchdev.com, voltar ao topo">
+          <svg viewBox="0 0 120 60" role="presentation"><path class="lw" d="M14 8 L32 52 L50 18 L68 52 L86 8"/><path class="lt" d="M92 8 L114 8 L103 28 Z"/></svg>
+          <span class="wm">workbench<b>dev</b><i>.com</i></span>
+        </a>
+        <span>© 2026 workbenchdev.com</span>
+      </div>
       <nav aria-label="Rodapé"><a href="#servicos">Serviços</a><a href="#processo">Como trabalhamos</a><a href="#projetos">Projetos</a><a href="#perguntas">Perguntas</a><a href="#contato">Contato</a></nav>
     </div>
   </div>
